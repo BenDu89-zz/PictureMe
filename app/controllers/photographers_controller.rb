@@ -1,13 +1,11 @@
 class PhotographersController < ApplicationController
   def index
     @photographers = Photographer.all
+
+    @photos = Photo.all
+
   end
 
- def show
-    @Photographer = Photographer.find(params[:id])
-    @review = Review.new
+  def show
   end
-
-
-
 end
